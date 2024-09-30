@@ -17,7 +17,7 @@
   <form class="mb-3">
     <div class="mb-3">
       <label class="form-label">nama pelanggan</label>
-      <input type="text" class="form-control" id="inputnamapelanggan">
+      <input type="text" class="form-control" id="inputnama">
     </div>
     <div class="mb-3">
       <label class="form-label">no telepon</label>
@@ -40,9 +40,9 @@
         event.preventDefault()
         
         let nama = $("#inputnama").val()
+        let notelepon = $("#inputnotelepon").val()
 
-
-        await tambahPelanggan(nama)
+        await tambahPelanggan(nama, notelepon)
         window.location.href = "index.html"
 
       })

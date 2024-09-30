@@ -14,7 +14,7 @@
 <body>
   <h1>Daftar Pelanggan</h1>
 
-  <table class="table" id="daftar-pelanggan">
+  <table class="table" id="daftar-notelepon">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -31,7 +31,7 @@
         import { ambilDaftarPelanggan } from './main.js';
         
         $(document).ready(async function() {
-          let elemenDaftarPelanggan = $("#daftar-pelanggan > tbody");
+          let elemenDaftarPelanggan = $("#daftar-notelepon > tbody");
           let daftarPelanggan = await ambilDaftarPelanggan();
           
           daftarPelanggan.forEach((data) => {
